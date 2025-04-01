@@ -1,0 +1,107 @@
+.custom-menubar, .p-menubar-root-list {
+    background-color: #151515;
+    border-color: #151515;
+}
+
+.p-menuitem-text,
+.welcome {
+    color: white;
+}
+
+.p-menuitem-link:hover {
+    background-color: #c325eb;
+    border-color: #ca25eb;
+    color: white;
+}
+
+.p-button-success,
+.btn-entrar, .btn-orange {
+    background-color: #a225eb;
+    border-color: #a225eb;
+    color: white;
+}
+
+.p-button-success:hover,
+.btn-entrar:hover, .btn-orange:hover {
+    background-color: rgb(195, 0, 255);
+    border-color: rgb(195, 0, 255);
+}
+
+.btn-red-not-bg {
+    background-color: transparent;
+    border-color: rgb(153, 0, 255);
+    color: rgb(174, 0, 255);
+}
+
+.btn-orange-not-bg {
+    background-color: transparent;
+    border-color: #ac25eb;
+    color: #ac25eb;
+}
+
+.btn-blue-not-bg {
+    background-color: transparent;
+    border-color: #0A66C2;
+    color: #0A66C2;
+}
+
+.linkedin-button {
+    background-color: #0077b5; /* Cor azul do LinkedIn */
+    color: white;
+    border: none;
+  }
+  
+  .linkedin-button:hover {
+    background-color: #005f87; /* Azul escuro ao passar o mouse */
+  }
+  
+
+.p-button-danger {
+    background-color: rgb(183, 0, 255);
+    border-color: rgb(162, 0, 255);
+    color: white;
+}
+
+.p-button-warning {
+    background-color: rgb(240, 74, 218);
+    border-color: rgb(240, 74, 218);
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* Adiciona um pouco de padding horizontal */
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem; /* Ajusta o espaço entre o título e o campo de busca */
+}
+
+.search-input {
+    width: 200px; /* Ajuste a largura do campo de busca conforme necessário */
+}
+
+.search-icon {
+    margin-left: -2rem; /* Ajusta o ícone para que fique sobre o campo de busca */
+    position: absolute; /* Posiciona o ícone sobre o campo de busca */
+    right: 1rem; /* Ajusta a posição do ícone dentro do campo de busca */
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        display: block; /* Altera de flex para block em telas menores */
+    }
+
+    .header-right {
+        margin-top: 0.8em;
+    }
+}
