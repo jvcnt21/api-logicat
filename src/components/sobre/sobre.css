@@ -1,0 +1,29 @@
+.sobre {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.p-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 0.5rem;
+} 
+.paw-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
