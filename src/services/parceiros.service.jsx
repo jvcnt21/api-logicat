@@ -12,7 +12,7 @@ class ParceirosService {
             id: res.data.id,
             name: res.data.name,
             types: res.data.types.map(t => t.type.name),
-            typesString: res.data.types.map(t => t.type.name).join(', '), // Adicionado
+            typesString: res.data.types.map(t => t.type.name).join(', '),
             height: res.data.height / 10,
             weight: res.data.weight / 10,
             sprite: res.data.sprites.front_default 
