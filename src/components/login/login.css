@@ -1,10 +1,99 @@
-/* Garantir que o container da página de login ocupe a tela inteira sem rolagem */
 body.login-page {
-    background-color: blueviolet;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #6c00d8, #a833ff);
     background-size: cover;
-    margin: 0; /* Remove margens do body para evitar espaço em branco */
-    height: 100vh; /* Ocupa a altura total da viewport */
-    overflow: hidden; /* Remove qualquer rolagem */
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.login-icon {
+    width: 32px;  
+    height: 29px;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+.p-card {
+    background: #1e1e1e;
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    max-width: 320px;
+}
+
+
+.p-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+.field label {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+}
+
+
+.p-inputtext {
+    border-radius: 8px;
+    background: #2c2c2c;
+    border: 1px solid #444;
+    color: white;
+    padding: 0.75rem;
+    transition: border-color 0.3s;
+}
+
+.p-inputtext:focus {
+    border-color: #c325eb;
+    box-shadow: 0 0 5px #c325eb44;
+}
+
+
+
+.btn-entrar {
+    background-color: #c325eb;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-entrar:hover {
+    background-color: #a01dc3;
+    transform: scale(1.03);
+}
+
+
+
+
+@media (max-width: 400px) {
+    .p-card {
+        width: 90% !important;
+    }
 }
