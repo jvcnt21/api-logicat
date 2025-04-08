@@ -30,14 +30,6 @@ class ParceirosService {
   postParceiro(data) {
     return http.post(url, data);
   }
-
-  putParceiro(id, data) {
-    return http.put(`${url}/${id}`, data);
-  }
-
-  deleteParceiroById(id) {
-    return http.delete(`${url}/${id}`);
-  }
 }
 
 export default new ParceirosService();
